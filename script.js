@@ -4,6 +4,19 @@ document.addEventListener("DOMContentLoaded",function(){
     let button1=document.getElementById("button1");
     let output=document.getElementById("output");
      let condition=document.getElementById("condition");
+     function toggleButton() {
+        if (height.value.trim() && weight.value.trim()) {
+            button1.disabled = false;
+        } else {
+            button1.disabled = true;
+            console.log("enter values")
+        }
+    }
+
+    // Add event listeners to height and weight inputs
+    height.addEventListener("input", toggleButton);
+    weight.addEventListener("input", toggleButton);
+    toggleButton();
     button1.addEventListener("click",()=>{
     let height1=height.value/100;
     if (!isNaN(height1) && !isNaN(weight.value) && height1 > 0) {
