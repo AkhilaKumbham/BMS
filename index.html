@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMS Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="main-block">
+        <div class="sub1">
+        <h2>Body Mass Index (BMI) Calculator </h2>
+         <span>Your Height (cm):</span>
+         <br>
+         <input type="text" placeholder="enter Height in cm" value="" id="height" required>
+         </div>
+         <div class="sub2">
+            <span>Your Weight (kg):</span>
+            <br>
+            <input type="text" placeholder="enter Weight in kg" value="" id="weight" required>
+         </div>
+        <div class="buttonn">
+        <button id="button1">Compute BMI</button>
+        </div>
+       <div class="final">
+         <input type="text" value="" id="output" readonly>
+       </div>
+       <div>
+        <div class="result-container">
+   <span>Weight Condition:</span><span id="condition"></span>
+       </div>
+    </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>

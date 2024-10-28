@@ -1,0 +1,112 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the main container */
+body, html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #6ca6cd;
+}
+
+/* Main block styling */
+.main-block {
+    background-color: #d0e8f2;
+    width: 600px;
+    padding: 30px 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+.main-block h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Labels and inputs */
+.main-block span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+    text-align: left;
+
+}
+
+.main-block input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    border: 1px solid #b0c4de;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #f0f8ff;
+}
+
+/* Button styling */
+.main-block .buttonn #button1 {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #6ca6cd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+.main-block .buttonn #button1:hover {
+    background-color: #93b5d5;
+}
+
+/* Output styling */
+.result-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust spacing between output and condition */
+    margin-top: 10px;
+}
+
+/* Output styling */
+.final input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #b0c4de;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #e0f3ff;
+    margin-bottom: 10px;
+}
+
+.result-container {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+    display: inline-block;
+}
+
+.result-container span {
+    display: inline; /* Ensures Weight Condition and condition result are on the same line */
+    font-weight: normal;
+}
+
+#condition {
+    color: #555;
+    font-weight: bold;
+    margin-left: 5px; /* Adds a little space between label and condition */
+}
